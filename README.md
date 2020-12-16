@@ -4,7 +4,7 @@
 <YubinBango />
 ```
 
-![yubinbango-demo](https://user-images.githubusercontent.com/475449/102419250-c1e59580-4042-11eb-9e0d-11be21df5c03.gif)
+![yubinbango-demo-1](https://user-images.githubusercontent.com/475449/102419916-2e14c900-4044-11eb-9d6a-7a6db65f9770.gif)
 
 ## Installation
 
