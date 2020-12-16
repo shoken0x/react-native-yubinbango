@@ -45,16 +45,19 @@ class YubinBango extends Component {
   }
 
   _setAddr = (text, yubin7) => {
-    const json = JSON.parse(text.match(/({".*"]})/)[0]);
-    const addr = json[yubin7]
-    if (addr && addr[0] && addr[1]) {
-      this.setState({ region_id: addr[0],
-                      region: this.PREFECTURES[addr[0]-1]["label"],
-                      locality: addr[1],
-                      street: addr[2],
-                      extended: addr[3]
-      });
-      this._setSelectedPrefecture(addr[0]-1);
+    const matcher = text.match(/({".*"]})/);
+    if (matcher) {
+      const json = JSON.parse(matcher[0]);
+      const addr = json[yubin7]
+      if (addr && addr[0] && addr[1]) {
+        this.setState({ region_id: addr[0],
+                        region: this.REGION[addr[0]],
+                        locality: addr[1],
+                        street: addr[2],
+                        extended: addr[3]
+        });
+        this._setSelectedPrefecture(addr[0]-1);
+      }
     }
   }
 
