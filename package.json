@@ -1,6 +1,6 @@
 {
   "name": "react-native-yubinbango",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "YubinBango component for React Native",
   "main": "src/YubinBango.js",
   "repository": {
