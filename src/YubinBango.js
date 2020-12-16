@@ -2,20 +2,8 @@ import React, { Component } from 'react';
 import { View, Text, TextInput } from "react-native";
 import Select from './Select';
 
-export default class YubinBango extends Component {
+class YubinBango extends Component {
   URL = 'https://yubinbango.github.io/yubinbango-data/data';
-  REGION = [
-    null, '北海道', '青森県', '岩手県', '宮城県',
-    '秋田県', '山形県', '福島県', '茨城県', '栃木県',
-    '群馬県', '埼玉県', '千葉県', '東京都', '神奈川県',
-    '新潟県', '富山県', '石川県', '福井県', '山梨県',
-    '長野県', '岐阜県', '静岡県', '愛知県', '三重県',
-    '滋賀県', '京都府', '大阪府', '兵庫県', '奈良県',
-    '和歌山県', '鳥取県', '島根県', '岡山県', '広島県',
-    '山口県', '徳島県', '香川県', '愛媛県', '高知県',
-    '福岡県', '佐賀県', '長崎県', '熊本県', '大分県',
-    '宮崎県', '鹿児島県', '沖縄県'
-  ];
   PREFECTURES = [
     { value: 1, label: "北海道" }, { value: 2, label: "青森県" }, { value: 3, label: "岩手県" },
     { value: 4, label: "宮城県" }, { value: 5, label: "秋田県" }, { value: 6, label: "山形県" },
@@ -61,7 +49,7 @@ export default class YubinBango extends Component {
     const addr = json[yubin7]
     if (addr && addr[0] && addr[1]) {
       this.setState({ region_id: addr[0],
-                      region: this.REGION[addr[0]],
+                      region: this.PREFECTURES[addr[0]-1]["label"],
                       locality: addr[1],
                       street: addr[2],
                       extended: addr[3]
@@ -141,4 +129,4 @@ export default class YubinBango extends Component {
   }
 }
 
-export default Yubinbango;
+export default YubinBango;
