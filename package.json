@@ -1,0 +1,29 @@
+{
+  "name": "react-native-yubinbango",
+  "version": "0.1.0",
+  "description": "YubinBango component for React Native",
+  "main": "src/YubinBango.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shoken0x/react-native-yubinbango.git"
+  },
+  "keywords": [
+    "react-native",
+    "yubinbango",
+    "react-component",
+    "ios",
+    "android"
+  ],
+  "author": {
+    "name": "Shoken Fujisaki",
+    "email": "syokenz@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shoken0x/react-native-yubinbango/issues"
+  },
+  "homepage": "https://github.com/shoken0x/react-native-yubinbango/#readme",
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  }
+}
