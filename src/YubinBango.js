@@ -91,7 +91,6 @@ class YubinBango extends Component {
     return (
       <View>
         <Text>郵便番号を入力してください</Text>
-        <Emoji name="coffee" style={{fontSize: 50}} />
         <TextInput
           keyboardType="number-pad"
           onChangeText={this._handleTextChange}
