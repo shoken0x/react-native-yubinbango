@@ -24,7 +24,7 @@ TODO
 
 ## For React
 
-[React YubinBango](https://github.com/shoken0x/react-yubinbango)
+[React YubinBango](https://github.com/shoken0x/react-yubinbango)  
 [![npm version](https://badge.fury.io/js/react-yubinbango.svg)](https://badge.fury.io/js/react-yubinbango)
 
 ## Credits
