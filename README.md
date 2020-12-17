@@ -1,8 +1,6 @@
 # React Native YubinBango
 
-```JSX
-<YubinBango />
-```
+[![npm version](https://badge.fury.io/js/react-native-yubinbango.svg)](https://badge.fury.io/js/react-native-yubinbango)
 
 ![yubinbango-demo-1](https://user-images.githubusercontent.com/475449/102419916-2e14c900-4044-11eb-9d6a-7a6db65f9770.gif)
 
